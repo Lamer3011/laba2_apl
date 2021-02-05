@@ -10,8 +10,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="name_label" Content="Type your name" HorizontalAlignment="Left" Margin="28,24,0,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="20"/>
-        <Label x:Name="label" Content="Type your group" HorizontalAlignment="Left" Margin="28,88,0,0" VerticalAlignment="Top" Width="166" Height="44" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+        <Label x:Name="name_label" Content="Ведіть ім'я" HorizontalAlignment="Left" Margin="28,24,0,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="20"/>
+        <Label x:Name="label" Content="Введіть номер групи" HorizontalAlignment="Left" Margin="0,88,0,0" VerticalAlignment="Top" Width="206" Height="44" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
         <TextBox x:Name="name_box" HorizontalAlignment="Left" Margin="211,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" FontSize="20" HorizontalContentAlignment="Center"/>
         <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Margin="161,150,0,0" VerticalAlignment="Top" FontSize="20" Height="45" Width="131" Click="button_Click"/>
         <TextBox x:Name="group_box" HorizontalAlignment="Left" Margin="211,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20" Height="36" HorizontalContentAlignment="Center"/>

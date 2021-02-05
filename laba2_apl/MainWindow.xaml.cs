@@ -29,15 +29,15 @@ namespace laba2_apl
         {
             if(name_box.Text.Length == 0)
             {
-                MessageBox.Show("You haven't typed in a name!", "Error");
+                MessageBox.Show("Ви не ввели ім'я", "Error");
                 name_box.Focus();
             } else if (group_box.Text.Length == 0)
             {
-                MessageBox.Show("You haven't typed in a group!", "Error");
+                MessageBox.Show("Ви не ввели номер групи", "Error");
                 group_box.Focus();
             } else
             {
-                MessageBox.Show("Hello, " + name_box.Text + " from " + group_box.Text + " group");
+                MessageBox.Show("Привіт, " + name_box.Text + " з " + group_box.Text + " групи");
             }
         }
     }
