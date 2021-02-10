@@ -13,6 +13,9 @@
         <Label x:Name="label2" Content="Password" Margin="188,162,188,0" Width="142" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="35" VerticalAlignment="Top"/>
         <PasswordBox x:Name="pass_log" HorizontalAlignment="Center" Margin="0,211,0,0" Width="226" FontSize="20" Height="32" VerticalAlignment="Top"/>
         <Button x:Name="log_button" Content="Увійти" HorizontalAlignment="Right" Margin="0,0,21,20" VerticalAlignment="Bottom" Height="33" Width="85" HorizontalContentAlignment="Center" Click="log_button_Click"/>
-
+        <Image x:Name="img_done" HorizontalAlignment="Left" Height="100" Margin="406,0,0,137" 
+               VerticalAlignment="Bottom" Width="100" Source="/Res/done.png" Panel.ZIndex="0"/>
+        <Image x:Name="img_err" HorizontalAlignment="Left" Height="100" Margin="406,0,0,137" 
+               VerticalAlignment="Bottom" Width="100" Source="/Res/err.png" Panel.ZIndex="0"/>
     </Grid>
 </Window>
