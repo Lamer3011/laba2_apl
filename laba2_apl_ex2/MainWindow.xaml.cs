@@ -57,7 +57,7 @@ namespace laba2_apl_ex2
                     answer = n1 / n2;
                     break;
                 case "root":
-                    answer = Math.Sqrt(n1 / n2);
+                    answer = Math.Pow(n1, (1 / n2));
                     break;
                 case "step":
                     answer = Math.Pow(n1, n2);
