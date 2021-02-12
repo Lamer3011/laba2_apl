@@ -36,7 +36,6 @@ namespace laba2_apl_ex3
                 
                 img_err.Visibility = Visibility.Visible;
                 img_done.Visibility = Visibility.Hidden;
-                MessageBox.Show("Введіть логін(більше 2 букв)");
             } else if (password.Length <= 2)
             {
                 none_pass.Visibility = Visibility.Visible;
@@ -44,7 +43,6 @@ namespace laba2_apl_ex3
 
                 img_err.Visibility = Visibility.Visible;
                 img_done.Visibility = Visibility.Hidden;
-                MessageBox.Show("Введіть пароль(більше 2 букв)");
             } else
             {
                 if (username == "admin")
@@ -53,19 +51,16 @@ namespace laba2_apl_ex3
                     {
                         img_done.Visibility = Visibility.Visible;
                         img_err.Visibility = Visibility.Hidden;
-                        MessageBox.Show("Ви успішно увійшли");
                     } else
                     {
                         img_err.Visibility = Visibility.Visible;
                         img_done.Visibility = Visibility.Hidden;
-                        MessageBox.Show("Неправильний пароль", "Error");
                     }
                 }
                 else
                 {
                     img_err.Visibility = Visibility.Visible;
                     img_done.Visibility = Visibility.Hidden;
-                    MessageBox.Show("Неправильний логін", "Error");
                 }
             }
         }
