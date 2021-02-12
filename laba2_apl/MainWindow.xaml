@@ -7,14 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="233" Width="441">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="70*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="73*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="name_label" Content="Ведіть ім'я" HorizontalAlignment="Left" Margin="28,24,0,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="20"/>
-        <Label x:Name="label" Content="Введіть номер групи" HorizontalAlignment="Left" Margin="0,88,0,0" VerticalAlignment="Top" Width="206" Height="44" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
-        <TextBox x:Name="name_box" HorizontalAlignment="Left" Margin="211,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" FontSize="20" HorizontalContentAlignment="Center"/>
-        <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Margin="161,150,0,0" VerticalAlignment="Top" FontSize="20" Height="45" Width="131" Click="button_Click"/>
-        <TextBox x:Name="group_box" HorizontalAlignment="Left" Margin="211,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20" Height="36" HorizontalContentAlignment="Center"/>
+        <Label x:Name="name_label" Content="Ведіть ім'я" HorizontalAlignment="Right" Margin="0,24,28,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label" Content="Введіть номер групи" Margin="0,15,6,0" VerticalAlignment="Top" Height="44" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Grid.Row="1" HorizontalAlignment="Right" Width="206"/>
+        <TextBox x:Name="name_box" HorizontalAlignment="Left" Margin="16,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="button" Content="OK" Margin="155,4,155,0" VerticalAlignment="Top" FontSize="20" Height="45" Click="button_Click" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="group_box" HorizontalAlignment="Left" Margin="16,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20" Height="36" HorizontalContentAlignment="Center" Grid.Row="1" Grid.Column="1"/>
 
     </Grid>
 </Window>
