@@ -31,9 +31,19 @@ namespace laba2_apl_ex3
             string password = pass_log.Password;
             if (username.Length <= 2)
             {
+                none_log.Visibility = Visibility.Visible;
+                none_pass.Visibility = Visibility.Hidden;
+                
+                img_err.Visibility = Visibility.Visible;
+                img_done.Visibility = Visibility.Hidden;
                 MessageBox.Show("Введіть логін(більше 2 букв)");
             } else if (password.Length <= 2)
             {
+                none_pass.Visibility = Visibility.Visible;
+                none_log.Visibility = Visibility.Hidden;
+
+                img_err.Visibility = Visibility.Visible;
+                img_done.Visibility = Visibility.Hidden;
                 MessageBox.Show("Введіть пароль(більше 2 букв)");
             } else
             {
@@ -41,18 +51,41 @@ namespace laba2_apl_ex3
                 {
                     if (password == "admin")
                     {
-
+                        img_done.Visibility = Visibility.Visible;
+                        img_err.Visibility = Visibility.Hidden;
                         MessageBox.Show("Ви успішно увійшли");
                     } else
                     {
+                        img_err.Visibility = Visibility.Visible;
+                        img_done.Visibility = Visibility.Hidden;
                         MessageBox.Show("Неправильний пароль", "Error");
                     }
                 }
                 else
                 {
+                    img_err.Visibility = Visibility.Visible;
+                    img_done.Visibility = Visibility.Hidden;
                     MessageBox.Show("Неправильний логін", "Error");
                 }
             }
+        }
+
+        private void user_log_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            img_done.Visibility = Visibility.Hidden;
+            img_err.Visibility = Visibility.Hidden;
+
+            none_log.Visibility = Visibility.Hidden;
+            none_pass.Visibility = Visibility.Hidden;
+        }
+
+        private void pass_log_KeyDown(object sender, KeyEventArgs e)
+        {
+            none_log.Visibility = Visibility.Hidden;
+            none_pass.Visibility = Visibility.Hidden;
+
+            img_done.Visibility = Visibility.Hidden;
+            img_err.Visibility = Visibility.Hidden;
         }
     }
 }
